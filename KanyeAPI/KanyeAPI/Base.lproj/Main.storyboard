@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KanyeAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyV-Br-wxV">
+                                <rect key="frame" x="87" y="437" width="240" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jyk-f7-0gw">
+                                <rect key="frame" x="128" y="748" width="157" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="FtS-ev-iAb"/>
+                                </constraints>
+                                <state key="normal" title="Get Kanye Quote"/>
+                                <connections>
+                                    <action selector="quoteButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QUx-oC-Fnd"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CWa-5w-Gjm">
+                                <rect key="frame" x="45" y="94" width="324" height="268"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="268" id="vyB-IU-apk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jyk-f7-0gw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="4xa-Yi-N2j"/>
+                            <constraint firstItem="CWa-5w-Gjm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="7EK-vV-hYR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jyk-f7-0gw" secondAttribute="trailing" constant="129" id="IWd-ts-KfO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CWa-5w-Gjm" secondAttribute="trailing" constant="45" id="Sb2-Ta-Seu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jyk-f7-0gw" secondAttribute="bottom" constant="40" id="cHH-4R-Z9f"/>
+                            <constraint firstItem="CWa-5w-Gjm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="e8e-FO-dO1"/>
+                            <constraint firstItem="uyV-Br-wxV" firstAttribute="top" secondItem="CWa-5w-Gjm" secondAttribute="bottom" constant="75" id="iRk-bM-Wef"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uyV-Br-wxV" secondAttribute="trailing" constant="87" id="nIl-3W-WfI"/>
+                            <constraint firstItem="uyV-Br-wxV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="pNG-mL-MGQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="kanyeImageView" destination="CWa-5w-Gjm" id="tqv-5C-50f"/>
+                        <outlet property="quoteButton" destination="Jyk-f7-0gw" id="Gbe-Yl-Qlo"/>
+                        <outlet property="quoteLabel" destination="uyV-Br-wxV" id="8QE-aa-mvN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
